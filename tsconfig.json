@@ -13,8 +13,7 @@
     "outDir": "./lib",
   },
   "include": [
-    "src",
-    "example"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules",

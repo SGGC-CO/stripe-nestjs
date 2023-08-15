@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build": "tsc",
+    "build": "rm -rf lib && tsc",
     "update:check": "ncu",
     "update:upgrade": "ncu -u",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -54,6 +54,6 @@
     "stripe": "^12.18.0"
   },
   "files": [
-    "lib/**/*"
+    "lib"
   ]
 }
