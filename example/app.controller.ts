@@ -2,7 +2,7 @@ import { Controller, Get, Inject, Post, Res } from '@nestjs/common';
 import { Response } from 'express';
 import { AccountService } from '../src/services';
 import { STRIPE_CLIENT } from '../src/stripe.symbol';
-import Stripe from '../src/stripe';
+import { Stripe } from '../src/stripe';
 
 @Controller()
 export class AppController {

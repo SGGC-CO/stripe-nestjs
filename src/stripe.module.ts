@@ -1,8 +1,7 @@
-import { DynamicModule, Module, Provider, Type } from '@nestjs/common';
+import { DynamicModule, Module, Provider } from '@nestjs/common';
 import { StripeAsyncOptions, StripeOptions, getStripeClient } from './stripe.options';
 import { STRIPE_CLIENT } from './stripe.symbol';
 import { AccountService, ConnectService, PaymentService } from './services';
-import Stripe from 'stripe';
 
 @Module({})
 export class StripeModule {
