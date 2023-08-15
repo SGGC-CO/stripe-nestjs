@@ -1,6 +1,6 @@
 {
   "name": "@sggc/stripe-nestjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Stripe module for NestJS",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,7 +9,7 @@
     "build": "tsc",
     "update:check": "ncu",
     "update:upgrade": "ncu -u",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
