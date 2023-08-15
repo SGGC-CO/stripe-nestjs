@@ -1,3 +1,3 @@
 import Stripe from 'stripe';
 
-export default Stripe;
+export { Stripe as Stripe };
