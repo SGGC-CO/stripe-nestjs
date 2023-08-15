@@ -1,5 +1,5 @@
 {
-  "name": "stripe-nestjs",
+  "name": "@sggc/stripe-nestjs",
   "version": "1.0.0",
   "description": "A simple Stripe module for NestJS",
   "main": "lib/index.js",
