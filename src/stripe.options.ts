@@ -7,6 +7,7 @@ export interface StripeOptions extends Stripe.StripeConfig {
 export type StripeOptionsFactory = (...args: any[]) => Promise<StripeOptions> | StripeOptions;
 
 export interface StripeAsyncOptions {
+  isGlobal?: boolean;
   inject: any[];
   createOptions: StripeOptionsFactory;
 }

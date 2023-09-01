@@ -29,6 +29,7 @@ export class StripeModule {
     };
 
     return {
+      global: options.isGlobal,
       module: StripeModule,
       exports: [stripeProvider, AccountService, ConnectService, PaymentService],
       providers: [stripeProvider, AccountService, ConnectService, PaymentService],

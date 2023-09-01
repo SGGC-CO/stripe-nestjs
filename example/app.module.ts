@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { StripeModule } from '../src/stripe.module';
+import { OtherModule } from './other.module/other.module';
 
 @Module({
   imports: [
@@ -10,6 +11,7 @@ import { StripeModule } from '../src/stripe.module';
       envFilePath: 'example/.env',
     }),
     StripeModule.forRootAsync({
+      isGlobal: true,
       inject: [ConfigService],
       createOptions: async (config: ConfigService) => {
         const apiKey = config.get<string>('STRIPE_API_KEY');
@@ -23,6 +25,7 @@ import { StripeModule } from '../src/stripe.module';
         };
       },
     }),
+    OtherModule,
   ],
   controllers: [AppController],
   providers: [],
